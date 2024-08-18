@@ -1,0 +1,58 @@
+.nav-link {
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #5B8FB9;
+}
+.log-link {
+    transition: all 0.5s ease;
+}
+
+.log-link:hover {
+    transform: scale(1.1);
+}
+#sidebar{
+    width: 0px;
+    transition: all ease 1s;
+    opacity: 0.95;
+
+} 
+#sidebar ul li{
+   display: none;
+}
+
+.skillbtn{
+    transition: all ease 0.5s;
+}
+
+.skillbtn2{
+    transition: all ease 0.5s;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+#sidebar2{
+    width: 0px;
+    transition: all ease 0.5s;
+    opacity: 0.95;
+}
+
+#sidebar2content{
+    display: none;
+}
+
+ /* Webkit browsers (Chrome, Safari) */
+ ::-webkit-scrollbar {
+    width: 6px; /* Dikey scrollbar genişliği */
+    height: 6px; /* Yatay scrollbar yüksekliği */
+}
+::-webkit-scrollbar-thumb {
+    background-color: white; /* Scrollbar rengi */
+    border-radius: 4px; /* Scrollbar yuvarlak köşeleri */
+}
+::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Scrollbar track (arka plan) rengi */
+}

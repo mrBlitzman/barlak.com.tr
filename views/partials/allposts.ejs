@@ -1,0 +1,44 @@
+<% posts.reverse().forEach(post => {
+    const postDate = new Date(post.date + 'T' + post.time);
+  
+    const now = new Date();
+  
+    const diffTime = now - postDate;
+  
+    let diffText;
+    let diffSeconds = Math.floor(diffTime / 1000);
+    let diffMinutes = Math.floor(diffTime / (1000 * 60));
+    let diffHours = Math.floor(diffTime / (1000 * 60 * 60));
+    let diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  
+    if (diffSeconds < 60) {
+      diffText = `${diffSeconds} seconds ago`;
+    } else if (diffMinutes < 60) {
+      diffText = `${diffMinutes} minutes ago`;
+    } else if (diffHours < 24) {
+      diffText = `${diffHours} hours ago`;
+    } else {
+      diffText = `${diffDays} days ago`;
+    }
+    %>
+    <div class="bg-[#333333] rounded-xl p-4 shadow-lg m-5 border-[0.1px] border-[#5B8FB9]"> <!-- Content Container -->
+        <div class="flex items-center mb-4"> <!-- Content Header -->
+            <img src="./statics/img/profilepic.jpg" alt="User Avatar" class="h-[45px] w-[45px] rounded-full mr-2">
+            <div class="flex flex-col">
+                <span class="font-semibold text-sm text-white">Ali R. Barlak</span>
+                <span class="text-xs text-gray-400">@Blitzman</span>
+            </div>
+        </div>
+        <div class="mb-6"> <!-- Content -->
+            <h2 class="m-5 mb-1 text-2xl text-white font-semibold"><%= post.title %></h2>
+            <p class="text-white m-4 mt-2"><%= post.content %></p>
+        </div>
+        <div class="flex justify-between items-center"> <!-- Content Footer -->
+            <div class="flex items-center">
+                <span class="text-sm text-[#5B8FB9] ml-4"><%= post.date %></span>
+            </div>
+            <span class="text-[#5B8FB9] text-sm"><%= diffText %></span>
+        </div>
+    </div>
+  <% }) %>
+  

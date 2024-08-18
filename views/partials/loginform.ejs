@@ -1,0 +1,21 @@
+<div class="p-10 pt-36 md:pt-24 md:p-24" style="height: calc(100vh - 130px);">
+    <div class="max-w-lg mx-auto bg-[#333333] p-2 rounded-lg shadow-lg">
+        <div class="w-full">
+            <h1 class="text-2xl font-bold mt-4 mx-4 text-white">Log In</h1>
+        </div>
+        <form action="/loginrequest" method="post" class="flex flex-col m-4">
+            <div class="mb-4">
+                <label for="username" class="text-gray-400">Username</label>
+                <input name="username" id="username" type="text" placeholder="Enter your username" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 text-white focus:outline-none focus:border-[#5B8FB9] mt-2 placeholder-gray-600">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="text-gray-400 ">Password</label>
+                <input name="password" id="password" type="password" placeholder="Enter your password" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 text-white focus:outline-none focus:border-[#5B8FB9] mt-2 placeholder-gray-600">
+            </div>
+            <% if (errorMessage) { %>
+                <p style="color: rgba(255, 0, 0, 0.637); margin-bottom: 16px;"><%= errorMessage %></p>
+              <% } %>
+            <button type="submit" class="text-white px-2 py-2 rounded-lg w-24 mt-0 mb-4 hover:scale-[1.05] bg-[#5B8FB9] hover:bg-[#58aaed]" style="transition: all ease 0.5s;">Log In</button>
+        </form>
+    </div>
+</div>

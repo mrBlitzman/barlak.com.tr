@@ -1,0 +1,116 @@
+    <div class="shadow-xl bg-[#2b2b2b] m-2 mt-10 rounded-2xl overflow-y-auto flex flex-col"> <!--Left-->
+        <h1 class="text-center text-2xl font-bold text-[#5B8FB9] font-helvetica p-5">About Me</h1>
+        <p class="text-center text-sm text-white font-helvetica px-5 pb-5">
+            My name is Ali Ravza Barlak. I am from Turkey, 17 years old. 
+            I'm a developer who wants to be the best at everything I do especially technology.
+            I am passionated in this goal and working for this since my 8s.
+        </p>
+    
+        <div class="grid grid-cols-3 p-1">
+            <div class="hidden md:block col-span-1">
+                <ul class="rounded-lg hidden md:block">
+                    <li class="text-center text-white text-xl font- py-3 shadow-xl">My Skill & Experiences</li>
+                    <button id="btn1" onclick="btnClicked(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn" style="background-color: #5B8FB9;"><li class="text-sm font- py-3 shadow-md " style="color: white;">Full Stack Web Developing</li></button>
+                    <button id="btn2" onclick="btnClicked(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn"><li class="text-sm font- py-3 shadow-md" style="color: white;">Professional Video Editing</li></button>
+                    <button id="btn3" onclick="btnClicked(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn"><li class="text-sm font- py-3 shadow-md" style="color: white;">Coding</li></button>
+                    <button id="btn4" onclick="btnClicked(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn"><li class="text-sm font- py-3 shadow-md" style="color: white;">Electronic and Robotics Developing</li></button>
+                    <button id="btn5" onclick="btnClicked(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn"><li class="text-sm font- py-3 shadow-md" style="color: white;">VTOL UAV Developing</li></button>
+                    <button id="btn6" onclick="btnClicked(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn"><li class="text-sm font- py-3 shadow-md" style="color: white;">Languages</li></button>
+                </ul>
+            </div>
+            <div class="relative col-span-3 md:col-span-2 rounded-lg shadow-xl m-1 md:m-5 bg-[#333333]">
+                    
+                <div id="sidebar2" class="absolute top-0 left-0 h-full z-10 bg-[#2b2b2b] md:hidden"> <!--Sidebar 2-->
+                    <div id="sidebar2content" class="mt-24">
+                        <button id="btn11" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2" ><li class="text-sm font- py-3 shadow-md " style="color: white;">Full Stack Web Developing</li></button>
+                        <button id="btn12" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Professional Video Editing</li></button>
+                        <button id="btn13" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Coding</li></button>
+                        <button id="btn14" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Electronic and Robotics Developing</li></button>
+                        <button id="btn15" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">VTOL UAV Developing</li></button>
+                        <button id="btn16" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Languages</li></button>
+                    </div>
+                </div> <!--Sidebar 2-->
+
+                <div class="flex flex-row">
+                    <button onclick="skillMenuClicked()" id="hamburgerMenu2" class="my-7 mr-10 ml-4"><i class="bi bi-list text-white text-3xl flex md:hidden relative z-20"></i></button> <!--HAMBURGER MENU 2-->
+                    <h1 id="skillHeader" class="text-center m-auto text-[#5B8FB9] text-xl font-semibold m-5 translate-x-[-36px] z-0">Full Stack Web Developing</h1>
+                </div>
+                <div id="btn1Content"> <!--For Button 1-->
+                    <p class="text-center text-white text-sm p-3">Ali R. Barlak, took his first step into Web Development by learning <span class="text-[#5B8FB9]">HTML and CSS</span> in the summer of 2023.
+                        Later, he completed the first stage of web development by learning <span class="text-[#5B8FB9]">JavaScript.</span>
+                        While it, he wrote lots of static web pages for practise. Then he started to learn back-end development with <span class="text-[#5B8FB9]">LAMP Stack.</span>
+                        Firstly he used <span class="text-[#5B8FB9]">PHP</span> and <span class="text-[#5B8FB9]">MYSQL</span> with <span class="text-[#5B8FB9]">XAMPP</span> and wrote an complete single-vendor laptop shop website.
+                        And after PHP and MYSQL, he turned to <span class="text-[#5B8FB9]">MERN Stack Development.</span> 
+                        For back-end development, he has learned <span class="text-[#5B8FB9]">Asynchronous JavaScript, Node.js, and Express.</span> For front-end development, he has learned <span class="text-[#5B8FB9]">TailwindCSS</span> and is currently learning <span class="text-[#5B8FB9]">React.</span>
+                        He wrote lots of JS based web application and APIs like this site.</p>
+                        <div class="flex flex-row overflow-x-scroll m-5 border-x-[1px] border-t-[1px] border-white rounded-md">
+                            <img src="./statics/img/html.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/css.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/js.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/php.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/mysql.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/node.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/express.png" class="p-3 w-20 h-20" alt="">
+                            <img src="./statics/img/twc.png" class="p-3 w-20 h-20" alt="">
+                        </div>
+                </div>
+
+                <div id="btn2Content" style="display: none;"> <!--For Button 2-->
+                    <p class="text-center text-white text-sm p-3">Although Ali R. Barlak had previously made poor-quality game edits on mobile when he was a child, 
+                        he has developed over time and become a professional editor using <span class="text-[#5B8FB9]">Adobe After Effects</span> ,
+                         which he discovered in early 2021. 
+                         By working with plugins such as <span class="text-[#5B8FB9]">stock plugins, BorisFX, Video Copilot, and Plugin Everything, </span>
+                         he has reached approximately a thousand subscribers and over 6000 hours of views
+                          on his <a href="https://youtube.com/c/Xsono" class="text-[#5B8FB9] underline underline-offset-1" target="_blank">Xsono</a> channel with his anime edits on YouTube.
+                        </p>
+                        <img src="./statics/img/editing.jpg" class="w-72 h-auto m-auto px-1 pt-1" alt="While anime editing on After Effects.">
+                        <p class="text-center text-white text-xs p-3">While anime editing on After Effects.</p>
+                </div>
+                <div id="btn3Content" style="display: none;"> <!--For Button 3-->
+                    <p class="text-center text-white text-sm p-3">Ali R. Barlak started his coding adventure with Arduino at <a href="https://malatyabilsem.meb.k12.tr/" class="text-[#5B8FB9] underline underline-offset-1" target="_blank" >Malatya Science and Art Center</a> at the age of 8. 
+                        Later, he learned the basics of <span class="text-[#5B8FB9]">C++</span> by logging in, but did not continue it. 
+                        Afterwards, he learned <span class="text-[#5B8FB9]">Python</span> and practiced, but he took a break from Python when he started <span class="text-[#5B8FB9]">developing UAVs.</span>
+                         In web development, he first learned basic web knowledge and front-end, then <span class="text-[#5B8FB9]">LAMP</span> and <span class="text-[#5B8FB9]">MERN</span> stack.
+                          </p>
+                          <img src="./statics/img/coding.jpg" class="w-72 h-auto m-auto px-1 pt-1" alt="While coding, Nevsehir.">
+                        <p class="text-center text-white text-xs p-3">While coding, Nevsehir.</p>
+                </div>
+                <div id="btn4Content" style="display: none;"> <!--For Button 4-->
+                    <p class="text-center text-white text-sm p-3">Ali R. Barlak started learning robotics at <a href="https://malatyabilsem.meb.k12.tr/" class="text-[#5B8FB9] underline underline-offset-1" target="_blank" >Malatya Science and Art Center</a> at the age of 8.
+                         Here he laid the foundations of his knowledge of coding and robotics.
+                          He participated in many events on this subject. He specialized in <span class="text-[#5B8FB9]">Arduino</span> microcontroller.
+                           He used many sensors and engine types and created many projects, from small to large scale.
+                            He took STEM and computer classes, learnt <span class="text-[#5B8FB9]">semiconductors.</span> Due to some misfortunes,
+                             they were eliminated in the 2nd stage of the Teknofest 2022 international UAV competition 
+                             with the <span class="text-[#5B8FB9]">Kaknus UAV,</span> which they built with the 4-person <span class="text-[#5B8FB9]">Simurga team</span> he founded at his high school.
+                              In 2023, <span class="text-[#5B8FB9]">he came first</span> in the region in the Tübitak 2204 Inter-High School Research Projects competition
+                               using BJT semiconductor technology in the field of geography, and made it to the <span class="text-[#5B8FB9]">Turkey finals,</span> 
+                               but did not get results.</p>
+                        <img src="./statics/img/tubitak1.jpg" class="w-72 h-72 m-auto px-1 pt-1" alt="Tubitak 2204 Inter-High School Research Projects competition, Turkey finals, Ankara.">
+                        <p class="text-center text-white text-xs p-3">Tubitak 2204 Inter-High School Research Projects competition, Turkey finals, Ankara.</p>
+                </div>
+                <div id="btn5Content" style="display: none;"> <!--For Button 5-->
+                    <p class="text-center text-white text-sm p-3">
+                        In 2022, he founded the Simurga team with three friends and a teacher, becoming the team captain. 
+                        They applied to Teknofest 2022 with their project named <span class="text-[#5B8FB9]">VTOL Kaknus UAV</span> and passed the first eliminations with high scores. 
+                        They started building Kaknus with a total of <span class="text-[#5B8FB9]">20,000 Turkish lira</span> received from the competition and sponsors. 
+                        However, the required amount for this project was approximately three times more. 
+                        The materials they bought with 20,000 Turkish lira were <span class="text-[#5B8FB9]">not enough</span> to complete the project. 
+                        Therefore, they could not finish the project by the desired date and were eliminated in the second round.
+                        During this process, Ali R. Barlak learned and gained experience in many subjects such as the <span class="text-[#5B8FB9]">flight principles,</span> electronics, and software of VTOL drones. 
+                        He worked with the <span class="text-[#5B8FB9]">Pixhawk</span> flight controller, Arduino Due, ESC circuits, Li-Po batteries, and brushless motors, as well as <span class="text-[#5B8FB9]">MissionPlanner,</span> QGroundControl, 
+                        and simulation programs.
+                    </p>
+                    <img src="./statics/img/kaknus.png" class="w-72 h-auto m-auto px-1 pt-1" alt="SEAIHL High School, Malatya.">
+                    <p class="text-center text-white text-xs p-3">SEAIHL High School, Malatya.</p>
+                </div>
+                <div id="btn6Content" class="my-auto" style="display: none;"> <!--For Button 6-->
+                        <ul>
+                            <li class="text-white text-center p-2">Turkish (Native Level)</li>
+                            <li class="text-white text-center p-2">English (B2 Level)</li>
+                            <li class="text-white text-center p-2 mb-5">German (Beginner Level)</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>

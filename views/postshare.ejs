@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mrBlitzman | Share Post</title>
+    <link rel="stylesheet" href="./statics/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="./statics/indexadditional.css" rel="stylesheet">
+</head>
+<body  class="bg-[#202020]">
+    <div id="sidebar" class="fixed h-full right-0 top-0 bg-[#2b2b2b] z-30 "> <!--Sidebar-->
+        <ul class="mt-32">
+            <li class="text-white m-2 mx-7 font-helvetica nav-link text-center hover:bg-[#404040] rounded-lg p-2"><a href="#">Portfolio</a></li>
+            <li class="text-white m-2 mx-7 font-helvetica nav-link text-center hover:bg-[#404040] rounded-lg p-2"><a href="#">Official Bulletin</a></li>
+            <li class="text-white m-2 mx-7 font-helvetica nav-link text-center hover:bg-[#404040] rounded-lg p-2"><a href="#">Contact</a></li>
+            <a href="./"><li class="text-white m-2 mx-7 font-helvetica nav-link text-center hover:bg-[#404040] rounded-lg p-2">Home</li></a>
+                <li class="text-center hover:bg-[#404040] rounded-lg p-2 mx-7">
+                    <form action="/logout" method="post" class="flex justify-center items-center log-link">
+                        <button type="submit" name="logout" class="flex justify-center items-center w-full">
+                            <h1 class="text-[#5B8FB9] font-semibold text-sm">Log out</h1>
+                            <i class="fas fa-sign-out-alt text-[#5B8FB9] m-1 ml-2"></i>
+                        </button>
+                    </form>  
+                </li>
+        </ul>
+        
+    </div> <!--Sidebar-->
+    <div>
+        <div class="flex flex-row pb-2 shadow-xl m-2 rounded-2xl border-[#ffffff] text-center">  
+            <div class="flex flex-row m-auto 2xl:ml-auto  ml-2 md:ml-10">
+                <img class="rounded-full object-cover m-2 w-[70px] h-[70px] md:w-[90px] md:h-[90px] " src="./statics/img/profilepic.jpg" alt="Ali Ravza Barlak">
+                <div class="flex flex-col my-auto ml-1">
+                    <h1 class=" text-white text-m md:text-xl font-helvetica font-semibold">Ali Ravza Barlak</h1>
+                    <div class="p-[2px] md:p-1 text-center">
+                        <a href="#"><i class="bi bi-instagram text-pink-300 mx-[2px] md:mx-1 text-xs md:text-base"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-blue-300 mx-[2px] md:mx-1 text-xs md:text-base"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-green-300 mx-[2px] md:mx-1 text-xs md:text-base"></i></a>
+                        <a href="#"><i class="bi bi-discord text-orange-300 mx-[2px] md:mx-1 text-xs md:text-base"></i></a>
+                        <a href="#"><i class="bi bi-github text-purple-300 mx-[2px] md:mx-1 text-xs md:text-base"></i></a>
+                    </div>
+                </div>
+            </div>
+            <nav class="m-auto hidden 2xl:flex">
+                <ul class="flex flex-row mt-3 ml-32">
+                    <li class="text-white m-2 mx-7 my-auto font-helvetica nav-link"><a href="#">Portfolio</a></li>
+                    <li class="text-white m-2 mx-7 my-auto font-helvetica nav-link"><a href="#">Official Bulletin</a></li>
+                    <li class="text-white m-2 mx-7 my-auto font-helvetica nav-link"><a href="#">Contact</a></li>
+                    <li class="text-white m-2 mx-7 font-helvetica nav-link"><a href="./">Home</a></li>
+                    <li class="m-auto ml-32">
+                        <form action="/logout" method="post" class="flex justify-center items-center log-link">
+                            <button type="submit" name="logout" class="flex justify-center items-center">
+                                <h1 class="text-[#5B8FB9] font-semibold text-sm">Log out</h1>
+                                <i class="fas fa-sign-out-alt text-[#5B8FB9] m-1 ml-2"></i>
+                            </button>
+                        </form>  
+                    </li>
+                </ul>
+            </nav>
+            <button onclick="sidebarMenuClicked()" id="hamburgerMenu" class="m-7"><i class="bi bi-list text-white text-4xl flex 2xl:hidden relative z-40"></i></button> <!--HAMBURGER MENU-->
+            </div>
+    </div>
+<%- include('./partials/postform.ejs') %>
+<%- include('./partials/footer.ejs') %>
+</body>
+<script src="./statics/indexfunctions.js"></script>
+</html>

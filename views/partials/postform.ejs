@@ -1,0 +1,16 @@
+<div class="p-24">
+    <div class="max-w-lg mx-auto bg-[#333333] p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4 text-white">Create Post</h2>
+        <form action="/posting" method="POST">
+            <div class="mb-4">
+                <label for="title" class="block text-gray-400 mb-2">Title</label>
+                <input required type="text" id="title" name="title" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 text-white focus:outline-none focus:border-[#5B8FB9]">
+            </div>
+            <div class="mb-4">
+                <label for="content" class="block text-gray-400 mb-2">Content</label>
+                <textarea required id="content" name="content" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 text-white focus:outline-none focus:border-[#5B8FB9] resize-none h-40"></textarea>
+            </div>
+            <button type="submit" class="bg-[#5B8FB9] hover:bg-[#58aaed] text-white py-2 px-4 rounded-lg hover:scale-[1.05]" style="transition: all ease 0.5s;">Post</button>
+        </form>
+    </div>
+</div>
