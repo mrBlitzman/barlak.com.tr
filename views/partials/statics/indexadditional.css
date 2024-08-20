@@ -44,15 +44,50 @@ body.noscroll {
     display: none;
 }
 
- /* Webkit browsers (Chrome, Safari) */
- ::-webkit-scrollbar {
-    width: 6px; /* Dikey scrollbar genişliği */
-    height: 6px; /* Yatay scrollbar yüksekliği */
+ .rightscrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px
 }
+.rightscrollbar::-webkit-scrollbar-thumb {
+    background-color: #ffffff9b; 
+    border-radius: 4px;
+}
+.rightscrollbar::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+.leftscrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
 ::-webkit-scrollbar-thumb {
-    background-color: white; /* Scrollbar rengi */
-    border-radius: 4px; /* Scrollbar yuvarlak köşeleri */
+    background-color: #5B8FB9; 
+    border-radius: 4px; 
 }
+
 ::-webkit-scrollbar-track {
-    background: #2c2c2c; /* Scrollbar track (arka plan) rengi */
+    background: #2c2c2c; 
 }
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scroll-wrapper {
+    overflow: hidden;
+  }
+  
+  .scroll-container {
+    display: flex;
+    width: max-content;
+  }

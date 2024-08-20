@@ -1,6 +1,37 @@
 <%- include('./partials/head.ejs') %>
+<body class="bg-[#202020] flex flex-col min-h-screen">
+    <main class="flex-grow">
 <%- include('./partials/topbar.ejs') %>
-<div class="grid grid-cols-1 2xl:grid-cols-2  p-2 md:p-10  pt-0">
+<div class="grid grid-cols-1 2xl:grid-cols-2  p-2 md:pb-24  pt-0">
 <%- include('./partials/left.ejs') %>
 <%- include('./partials/right.ejs') %>
+</main>
 <%- include('./partials/footer.ejs') %>
+<script src="./statics/indexfunctions.js"></script> 
+<script>
+    const scrollContainer = document.querySelector('.scroll-container');
+
+function startScrolling() {
+  let scrollAmount = 0;
+  const scrollStep = 1; // Her adımda ne kadar kayacağını belirleyin
+  const scrollInterval = 20; // Kaydırmanın hızı (ms cinsinden)
+
+  function step() {
+    scrollAmount += scrollStep;
+
+    // container'ı sola kaydır
+    scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+
+    // Eğer tüm içerik kaydıysa, başa döner
+    if (scrollAmount >= scrollContainer.scrollWidth / 2) {
+      scrollAmount = 0;
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
+
+startScrolling();
+</script>

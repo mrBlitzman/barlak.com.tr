@@ -1,9 +1,12 @@
 <%- include('./partials/head.ejs') %>
-<body class="bg-[#202020]">
+<body class="bg-[#202020] flex flex-col min-h-screen">
+    <main class="flex-grow">
     <div>
         <img class="m-auto mt-24 w-72 " src="./statics/img/404.png">
         <p class="text-white text-center text-2xl font-helvetica font-semibold">Oops! This page couldn't found.</p>
         <p href="./" class="text-white text-center text-sm m-2"><a href="./" class="text-[#5B8FB9]">Click here</a> for go back homepage</p>
     </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

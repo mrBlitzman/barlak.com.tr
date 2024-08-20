@@ -39,7 +39,6 @@ const btnClicked = (btn) => {
     Array.from(allbuttons).forEach(button => {
         button.style.backgroundColor = "";
     });
-
     thisBtn = document.getElementById(btnId);
     thisBtn.style.backgroundColor = "#5B8FB9";
     switch (btnId){
@@ -235,3 +234,7 @@ const btnClicked2 = (btn) => {
             break;
     }
 };
+
+
+
+

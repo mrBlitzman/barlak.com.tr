@@ -113,7 +113,7 @@ app.post('/logout', (req, res) => {
 });
 
 app.get('/portfolio', (req, res) => {
-  res.render('portfolio', { header: "portfolio"})
+  res.render('portfolio', { header: "Portfolio"})
 })
 
 app.get('/bulletin', async (req, res) => {

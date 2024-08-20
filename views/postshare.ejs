@@ -9,7 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="./statics/indexadditional.css" rel="stylesheet">
 </head>
-<body  class="bg-[#202020]">
+<body class="bg-[#202020] flex flex-col min-h-screen">
+    <main class="flex-grow">
+
     <div id="sidebar" class="fixed h-full right-0 top-0 bg-[#2b2b2b] z-30 "> <!--Sidebar-->
         <ul class="mt-32">
             <li class="text-white m-2 mx-7 font-helvetica nav-link text-center hover:bg-[#404040] rounded-lg p-2"><a href="#">Portfolio</a></li>
@@ -62,6 +64,7 @@
             </div>
     </div>
 <%- include('./partials/postform.ejs') %>
+</main>
 <%- include('./partials/footer.ejs') %>
 </body>
 <script src="./statics/indexfunctions.js"></script>

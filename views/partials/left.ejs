@@ -1,11 +1,10 @@
-    <div class="shadow-xl bg-[#2b2b2b] m-2 mt-10 rounded-2xl overflow-y-auto flex flex-col"> <!--Left-->
+    <div class="shadow-xl bg-[#2b2b2b] m-5  rounded-2xl overflow-y-auto flex flex-col h-fit" id="reference-element"> <!--Left-->
         <h1 class="text-center text-2xl font-bold text-[#5B8FB9] font-helvetica p-5">About Me</h1>
         <p class="text-center text-sm text-white font-helvetica px-5 pb-5">
-            My name is Ali Ravza Barlak. I am from Turkey, 17 years old. 
-            I'm a developer who wants to be the best at everything I do especially technology.
-            I am passionated in this goal and working for this since my 8s.
+            I'm Ali Ravza Barlak from Turkey, and I'm 17 years old.
+             As a passionate developer, my goal is to excel in every technology-related field I pursue.
+              I've been dedicated to this journey since I was 8 years old.
         </p>
-    
         <div class="grid grid-cols-3 p-1">
             <div class="hidden md:block col-span-1">
                 <ul class="rounded-lg hidden md:block">
@@ -21,19 +20,19 @@
             <div class="relative col-span-3 md:col-span-2 rounded-lg shadow-xl m-1 md:m-5 bg-[#333333]">
                     
                 <div id="sidebar2" class="absolute top-0 left-0 h-full z-10 bg-[#2b2b2b] md:hidden"> <!--Sidebar 2-->
-                    <div id="sidebar2content" class="mt-24">
+                    <ul id="sidebar2content" class="mt-24">
                         <button id="btn11" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2" ><li class="text-sm font- py-3 shadow-md " style="color: white;">Full Stack Web Developing</li></button>
                         <button id="btn12" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Professional Video Editing</li></button>
                         <button id="btn13" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Coding</li></button>
                         <button id="btn14" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Electronic and Robotics Developing</li></button>
                         <button id="btn15" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">VTOL UAV Developing</li></button>
                         <button id="btn16" onclick="btnClicked2(this)" class="w-full hover:bg-[#333333] rounded-lg skillbtn2"><li class="text-sm font- py-3 shadow-md" style="color: white;">Languages</li></button>
-                    </div>
+                    </ul>
                 </div> <!--Sidebar 2-->
 
                 <div class="flex flex-row">
                     <button onclick="skillMenuClicked()" id="hamburgerMenu2" class="my-7 mr-10 ml-4"><i class="bi bi-list text-white text-3xl flex md:hidden relative z-20"></i></button> <!--HAMBURGER MENU 2-->
-                    <h1 id="skillHeader" class="text-center m-auto text-[#5B8FB9] text-xl font-semibold m-5 translate-x-[-36px] z-0">Full Stack Web Developing</h1>
+                    <h1 id="skillHeader" class="text-center m-auto text-[#5B8FB9] text-xl font-semibold translate-x-[-36px] z-0">Full Stack Web Developing</h1>
                 </div>
                 <div id="btn1Content"> <!--For Button 1-->
                     <p class="text-center text-white text-sm p-3">Ali R. Barlak, took his first step into Web Development by learning <span class="text-[#5B8FB9]">HTML and CSS</span> in the summer of 2023.
@@ -43,16 +42,20 @@
                         And after PHP and MYSQL, he turned to <span class="text-[#5B8FB9]">MERN Stack Development.</span> 
                         For back-end development, he has learned <span class="text-[#5B8FB9]">Asynchronous JavaScript, Node.js, and Express.</span> For front-end development, he has learned <span class="text-[#5B8FB9]">TailwindCSS</span> and is currently learning <span class="text-[#5B8FB9]">React.</span>
                         He wrote lots of JS based web application and APIs like this site.</p>
-                        <div class="flex flex-row overflow-x-scroll m-5 border-x-[1px] border-t-[1px] border-white rounded-md">
-                            <img src="./statics/img/html.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/css.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/js.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/php.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/mysql.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/node.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/express.png" class="p-3 w-20 h-20" alt="">
-                            <img src="./statics/img/twc.png" class="p-3 w-20 h-20" alt="">
-                        </div>
+                        <div class="scroll-wrapper border-[1px] border-white rounded-md overflow-hidden m-5">
+                            <div class="scroll-container flex">
+                                <% for (let i = 0; i < 3; i++) { %>
+                                <img src="./statics/img/html.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/css.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/js.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/php.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/mysql.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/node.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/express.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <img src="./statics/img/twc.png" class="p-3 w-20 h-20 inline-block" alt="">
+                                <% } %>
+                            </div>
+                          </div>
                 </div>
 
                 <div id="btn2Content" style="display: none;"> <!--For Button 2-->
