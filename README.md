@@ -1,5 +1,6 @@
 # Barlak.com.tr
 **Release: 1.0.1**
+
 Welcome to the Barlak.com.tr repository! This is a personal bulletin website where only I (the owner) can post content. Below you'll find the information on how to set up and run the project.
 
 ## Technologies Used
