@@ -14,16 +14,14 @@
 
 function startScrolling() {
   let scrollAmount = 0;
-  const scrollStep = 1; // Her adımda ne kadar kayacağını belirleyin
-  const scrollInterval = 20; // Kaydırmanın hızı (ms cinsinden)
+  const scrollStep = 1;
+  const scrollInterval = 20;
 
   function step() {
     scrollAmount += scrollStep;
 
-    // container'ı sola kaydır
     scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
 
-    // Eğer tüm içerik kaydıysa, başa döner
     if (scrollAmount >= scrollContainer.scrollWidth / 3) {
       scrollAmount = 0;
     }

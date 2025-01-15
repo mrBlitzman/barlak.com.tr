@@ -1,93 +1,92 @@
 .nav-link {
-    font-size: 1rem;
-    transition: all 0.5s ease;
+  font-size: 1rem;
+  transition: all 0.5s ease;
 }
 
 .nav-link:hover {
-    color: #5B8FB9;
+  color: #5b8fb9;
 }
 .log-link {
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .log-link:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-#sidebar{
-    width: 0px;
-    transition: all ease 1s;
-    opacity: 0.95;
-
-} 
-#sidebar ul li{
-   display: none;
+#sidebar {
+  width: 0px;
+  transition: all ease 1s;
+  opacity: 0.95;
 }
-
-.skillbtn{
-    transition: all ease 0.5s;
+#sidebar ul li {
+  display: none;
 }
 
-.skillbtn2{
-    transition: all ease 0.5s;
+.skillbtn {
+  transition: all ease 0.5s;
+}
+
+.skillbtn2 {
+  transition: all ease 0.5s;
 }
 
 body.noscroll {
-    overflow: hidden;
+  overflow: hidden;
 }
-#sidebar2{
-    width: 0px;
-    transition: all ease 0.5s;
-    opacity: 0.95;
-}
-
-#sidebar2content{
-    display: none;
+#sidebar2 {
+  width: 0px;
+  transition: all ease 0.5s;
+  opacity: 0.95;
 }
 
- .rightscrollbar::-webkit-scrollbar {
-    width: 3px;
-    height: 3px
+#sidebar2content {
+  display: none;
+}
+
+.rightscrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
 }
 .rightscrollbar::-webkit-scrollbar-thumb {
-    background-color: #ffffff9b; 
-    border-radius: 4px;
+  background-color: #ffffff9b;
+  border-radius: 4px;
 }
 .rightscrollbar::-webkit-scrollbar-track {
-    background: #2c2c2c;
+  background: #2c2c2c;
 }
 
 .leftscrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 ::-webkit-scrollbar {
-    width: 8px; 
-    height: 8px; 
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #5B8FB9; 
-    border-radius: 4px; 
+  background-color: #5b8fb9;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #2c2c2c; 
+  background: #2c2c2c;
 }
 
 @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
-  .scroll-wrapper {
-    overflow: hidden;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .scroll-container {
-    display: flex;
-    width: max-content;
-  }
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  width: max-content;
+}
